@@ -12,11 +12,10 @@ func main() {
 
 	n := *num
 	citiesMapFile := *f
-	citiesMapFile = "world.test"
 
-	//if citiesMapFile == "" {
-	//	panic("-f; file is required")
-	//}
+	if citiesMapFile == "" {
+		panic("-f; file is required")
+	}
 
 	readFile, err := os.Open(citiesMapFile)
 
